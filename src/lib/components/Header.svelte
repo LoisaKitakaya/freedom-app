@@ -12,9 +12,9 @@
 	}
 </script>
 
-<div class="navbar bg-base-100">
+<div class="navbar bg-base-100 border-b mb-4">
 	<div class="flex-1">
-		<a href="/" class="px-4 normal-case text-xl">{config.title}</a>
+		<a href="/" class="px-4 normal-case text-xl font-semibold">{config.title}</a>
 	</div>
 	<div class="flex-none">
 		<ul class="menu menu-horizontal px-1">

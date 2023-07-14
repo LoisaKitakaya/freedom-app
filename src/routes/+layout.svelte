@@ -24,6 +24,6 @@
 
 <style>
 	main {
-		min-height: 82vh !important;
+		min-height: 77vh !important;
 	}
 </style>
