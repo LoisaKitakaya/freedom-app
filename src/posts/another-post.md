@@ -1,7 +1,7 @@
 ---
 title: This is Post one (1)
 
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 date: '2023-07-14'
 
@@ -16,7 +16,7 @@ published: true
 
 Media inside the **static** folder is served from `/`, like so:
 
-![Svelte](/static/favicon.png)
+![Svelte](/favicon.png)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum iaculis eu non diam. Dictumst quisque sagittis purus sit amet. At varius vel pharetra vel turpis. Purus non enim praesent elementum facilisis leo vel fringilla est. A lacus vestibulum sed arcu non odio euismod. Sit amet venenatis urna cursus. Maecenas sed enim ut sem viverra. Imperdiet proin fermentum leo vel orci. Viverra justo nec ultrices dui sapien eget mi proin sed. Augue eget arcu dictum varius. Sit amet est placerat in egestas erat. Urna molestie at elementum eu facilisis. Vitae auctor eu augue ut lectus arcu bibendum at. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Cum sociis natoque penatibus et magnis dis parturient. Eros in cursus turpis massa tincidunt dui ut ornare lectus. Massa massa ultricies mi quis hendrerit dolor magna eget.
 

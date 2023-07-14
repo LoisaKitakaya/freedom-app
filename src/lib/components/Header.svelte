@@ -30,13 +30,10 @@
 				<a href="/portfolio">Portfolio</a>
 			</li>
 			<li>
-				<a href="/contacts">Contacts</a>
-			</li>
-			<li>
 				<a href="/rss.xml" target="_blank">RSS</a>
 			</li>
 			<li>
-				<details>
+				<details class="z-10">
 					<summary> <SunMoon /> </summary>
 					<ul class="p-2 bg-base-100">
 						<form method="POST" use:enhance={updateTheme}>
