@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { enhance } from '$app/forms'
 	import * as config from '$lib/config'
 	import { light, dark } from '$lib/theme'
