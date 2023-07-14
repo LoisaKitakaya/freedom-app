@@ -2,9 +2,17 @@
 <html lang="en" data-theme="">
 	<head>
 		<meta charset="utf-8" />
+		<link rel="alternate" type="application/atom+xml" href="/rss.xml" />
 		<link rel="icon" href="https://fav.farm/🔥" />
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
+		<script type="module">
+			const theme = localStorage.getItem('theme')
+
+			theme
+				? document.documentElement.setAttribute('theme', theme)
+				: localStorage.setItem('theme', 'night')
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>

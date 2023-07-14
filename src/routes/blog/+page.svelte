@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config'
+	import moment from 'moment'
 	export let data
 
 	const { posts } = data
@@ -15,7 +16,9 @@
 	<div class="grid grid-cols-3 gap-4">
 		{#each posts as post}
 			<a href="/blog/{post.slug}">
-				<div class="card bg-base-200 text-base-content shadow h-full w-full mb-4 hover:border-primary-focus hover:border border border-transparent transition-all">
+				<div
+					class="card bg-base-200 text-base-content shadow h-full w-full mb-4 hover:border-primary-focus hover:border border border-transparent transition-all"
+				>
 					<div class="card-body">
 						<h2 class="card-title text-2xl">{post.title}</h2>
 						<p>{post.description}</p>
@@ -26,7 +29,7 @@
 								<span>| {category} </span>
 							{/each}
 						</p>
-						<p class="italic text-sm">Published: {post.date}</p>
+						<p class="italic text-sm">Published: {moment(post.date).fromNow()}</p>
 					</div>
 				</div>
 			</a>

@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { enhance } from '$app/forms'
 	import * as config from '$lib/config'
-	import { light, dark } from '$lib/theme'
-	import { Sun, Moon, SunMoon } from 'lucide-svelte'
+	import Toggle from './Toggle.svelte'
 
 	// @ts-ignore
 	const updateTheme = ({ action }) => {
@@ -33,19 +31,7 @@
 				<a href="/rss.xml" target="_blank">RSS</a>
 			</li>
 			<li>
-				<details class="z-10">
-					<summary> <SunMoon /> </summary>
-					<ul class="p-2 bg-base-100">
-						<form method="POST" use:enhance={updateTheme}>
-							<li>
-								<button formaction="/?/setTheme&theme={$light}"><Sun /></button>
-							</li>
-							<li>
-								<button formaction="/?/setTheme&theme={$dark}"><Moon /></button>
-							</li>
-						</form>
-					</ul>
-				</details>
+				<Toggle />
 			</li>
 		</ul>
 	</div>

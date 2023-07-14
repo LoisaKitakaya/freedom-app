@@ -12,6 +12,8 @@ categories:
 published: true
 ---
 
+### Table of Contents
+
 # Another Title
 
 Media inside the **static** folder is served from `/`, like so:

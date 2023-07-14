@@ -1,6 +1,23 @@
-import { readable, writable } from 'svelte/store'
+import { writable } from 'svelte/store'
+import { browser } from '$app/environment'
 
-export const dark = readable('night')
-export const light = readable('winter')
+type Theme = 'winter' | 'night'
 
-export const theme = writable('')
+const userTheme = browser && localStorage.getItem('theme')
+
+export const theme = writable(userTheme ?? 'night')
+
+export function toggleTheme() {
+	theme.update((currentTheme) => {
+		const newTheme = currentTheme === 'night' ? 'winter' : 'night'
+
+		document.documentElement.setAttribute('data-theme', newTheme)
+		localStorage.setItem('theme', newTheme)
+
+		return newTheme
+	})
+}
+
+export function setTheme(newTheme: Theme) {
+	theme.set(newTheme)
+}

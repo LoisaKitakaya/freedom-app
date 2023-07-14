@@ -1,4 +1,5 @@
 <script lang="ts">
+	import moment from 'moment'
 	import * as config from '$lib/config'
 	export let data
 
@@ -14,16 +15,11 @@
 </svelte:head>
 
 <article>
-	<!-- Title -->
-
-	<!-- <p>Published at {formatDate(data.meta.date)}</p> -->
-
-	<!-- Tags -->
-
 	<div class="flex justify-between">
 		<div />
 		<div>
-			<div class="mb-6">
+			<p class="mb-4">{moment(meta.date).format('Do MMM YYYY')}</p>
+			<div>
 				{#each meta.categories as category}
 					<a href="/blog/categories/{category}" class="mr-2 link link-hover">&num;{category}</a>
 				{/each}
