@@ -4,8 +4,8 @@
 	import image2 from '$lib/assets/2.png'
 </script>
 
-<div class="flex">
-	<div class="prose">
+<div class="flex justify-center items-center">
+	<div class="prose m-0 sm:ml-8">
 		<p>
 			Hello there! I'm {config.title}, a freelance full-stack web developer passionate about creating
 			impactful digital experiences. With expertise in Python and JavaScript, I possess the skills
