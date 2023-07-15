@@ -2,13 +2,15 @@
 	import '../app.css'
 
 	import { fade } from 'svelte/transition'
+	import BackToTop from '$lib/components/BackToTop.svelte'
 	import Footer from '$lib/components/Footer.svelte'
 	import Header from '$lib/components/Header.svelte'
-	import BackToTop from '$lib/components/BackToTop.svelte';
 
 	export let data
 
 	const { url } = data
+
+	console.log(url)
 </script>
 
 <div class="layout">
@@ -22,7 +24,6 @@
 	{/key}
 
 	<Footer />
-
 </div>
 
 <style>
