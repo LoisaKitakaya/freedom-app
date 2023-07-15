@@ -12,7 +12,7 @@
 	}
 </script>
 
-<div class="navbar bg-base-100 border-b mb-4">
+<div class="navbar bg-base-100 mb-4">
 	<div class="flex-1">
 		<a href="/" class="px-4 normal-case text-2xl font-semibold">{config.title}</a>
 	</div>

@@ -11,8 +11,6 @@ export const load = async () => {
 		}
 	})
 
-    console.log(response.data.slice(0, 10))
-
 	return {
 		events: response.data
 	}

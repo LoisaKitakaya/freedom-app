@@ -1,12 +1,13 @@
 @import '@fontsource/manrope';
 @import '@fontsource/jetbrains-mono';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-	/* font */
+	scroll-behavior: smooth;
 	--font-sans: 'Manrope', sans-serif;
 	--font-mono: 'JetBrains Mono', monospace;
 }

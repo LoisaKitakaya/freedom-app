@@ -4,6 +4,7 @@
 	import { fade } from 'svelte/transition'
 	import Footer from '$lib/components/Footer.svelte'
 	import Header from '$lib/components/Header.svelte'
+	import BackToTop from '$lib/components/BackToTop.svelte';
 
 	export let data
 
@@ -16,10 +17,12 @@
 	{#key url}
 		<main class="px-6 py-2" transition:fade>
 			<slot />
+			<BackToTop />
 		</main>
 	{/key}
 
 	<Footer />
+
 </div>
 
 <style>

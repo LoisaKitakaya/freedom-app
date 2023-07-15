@@ -13,8 +13,6 @@
 		'flask',
 		'svelte',
 		'misc',
-		'life',
-		'philosophy'
 	]
 </script>
 

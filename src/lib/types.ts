@@ -6,8 +6,6 @@ export type Categories =
 	| 'flask'
 	| 'svelte'
 	| 'misc'
-	| 'life'
-	| 'philosophy'
 
 export type Post = {
 	title: string

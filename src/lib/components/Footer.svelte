@@ -3,7 +3,7 @@
 	import { Github, Twitter, Rss, Mail } from 'lucide-svelte'
 </script>
 
-<footer class="footer items-center p-4 bg-base-100 text-base-content mt-8 border-t">
+<footer class="footer items-center p-4 bg-base-100 text-base-content mt-8">
 	<div class="items-center grid-flow-col">
 		<p class="text-lg">{config.title} &copy {new Date().getFullYear()}</p>
 	</div>
