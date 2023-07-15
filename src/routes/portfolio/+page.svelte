@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>{config.title} | Blog</title>
+	<title>{config.title} | Portfolio</title>
 </svelte:head>
 
 <section out:fade={{ duration: 400 }} in:fade={{ delay: 400, duration: 400 }}>
