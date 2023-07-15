@@ -18,7 +18,10 @@
 	<div class="flex justify-between items-center mb-10">
 		<h1 class="text-4xl">Read something</h1>
 		<div class="dropdown dropdown-bottom dropdown-end">
+			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+			<!-- svelte-ignore a11y-label-has-associated-control -->
 			<label tabindex="0" class="btn btm-sm btn-ghost">Categories</label>
+			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<ul
 				tabindex="0"
 				class="dropdown-content z-[1] menu p-4 shadow-sm bg-base-100 rounded-box w-40 border"
