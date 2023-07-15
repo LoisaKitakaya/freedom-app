@@ -1,29 +1,21 @@
 <script lang="ts">
 	import * as config from '$lib/config'
 	import moment from 'moment'
+	import { fade } from 'svelte/transition'
+
 	export let data
 
 	const { posts } = data
 	const { category } = data
 
-	const categories = [
-		'programming',
-		'python',
-		'javascript',
-		'django',
-		'flask',
-		'svelte',
-		'misc',
-		'life',
-		'philosophy'
-	]
+	const categories = ['programming', 'javascript', 'python', 'django', 'svelte', 'flask', 'misc']
 </script>
 
 <svelte:head>
 	<title>{config.title} | Categories</title>
 </svelte:head>
 
-<section>
+<section out:fade={{ duration: 400 }} in:fade={{ delay: 400, duration: 400 }}>
 	<div class="flex justify-between items-center mb-10">
 		<h1 class="text-4xl">Categories</h1>
 		<div class="dropdown dropdown-bottom dropdown-end">

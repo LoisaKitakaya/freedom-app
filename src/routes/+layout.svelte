@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css'
 
-	import { fade } from 'svelte/transition'
+	import BackToTop from '$lib/components/BackToTop.svelte'
 	import Footer from '$lib/components/Footer.svelte'
 	import Header from '$lib/components/Header.svelte'
 
@@ -14,8 +14,9 @@
 	<Header />
 
 	{#key url}
-		<main class="px-6 py-2" transition:fade>
+		<main class="px-6 py-2">
 			<slot />
+			<BackToTop />
 		</main>
 	{/key}
 
