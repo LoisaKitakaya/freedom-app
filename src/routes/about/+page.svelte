@@ -2,9 +2,11 @@
 	import * as config from '$lib/config'
 	import image1 from '$lib/assets/1.png'
 	import image2 from '$lib/assets/2.png'
+	import { fade } from 'svelte/transition'
 </script>
 
-<div class="flex justify-center items-center">
+<div class="flex justify-center items-center" out:fade={{ duration: 400 }}
+	in:fade={{ delay: 400, duration: 400 }}>
 	<div class="prose m-0 sm:ml-8">
 		<p>
 			Hello there! I'm {config.title}, a freelance full-stack web developer passionate about creating

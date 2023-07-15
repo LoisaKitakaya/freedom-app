@@ -1,10 +1,22 @@
 export type Categories =
 	| 'programming'
-	| 'python'
 	| 'javascript'
+	| 'python'
 	| 'django'
-	| 'flask'
 	| 'svelte'
+	| 'flask'
+	| 'misc'
+
+export type Projects =
+	| 'automation'
+	| 'javascript'
+	| 'scrapping'
+	| 'fullstack'
+	| 'frontend'
+	| 'backend'
+	| 'website'
+	| 'python'
+	| 'webapp'
 	| 'misc'
 
 export type Post = {
@@ -15,3 +27,5 @@ export type Post = {
 	categories: Categories[]
 	published: boolean
 }
+
+

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import moment from 'moment'
 	import * as config from '$lib/config'
-	import { ArrowRight } from 'lucide-svelte'
+	import { Github, Twitter, Mail } from 'lucide-svelte'
 	import { fade } from 'svelte/transition'
 
 	export let data
@@ -25,7 +25,7 @@
 				<p>{moment(meta.date).format('Do MMM YYYY')}</p>
 				<div>
 					{#each meta.categories as category}
-						<a href="/blog/categories/{category}" class="mr-2 link link-hover">&num;{category}</a>
+						<span class="mr-2">&num;{category}</span>
 					{/each}
 				</div>
 			</div>
@@ -38,15 +38,24 @@
 
 <section class="flex justify-center w-full sm:w-3/5 mx-auto bg-base-200 card">
 	<div class="border p-4 card">
-		<p class="text-3xl font-semibold mb-4">Found a mistake?</p>
+		<p class="text-3xl font-semibold mb-4">Looking for a web developer?</p>
 		<p class="mb-4 text-lg">
-			Every post is a Markdown file so contributing is simple as following the link below and
-			pressing the pencil icon inside GitHub to edit it.
+			Are you ready to take your online presence to the next level and turn your innovative ideas
+			into reality? Let's connect and collaborate to create something truly remarkable. Below are my
+			socials.
 		</p>
-		<a
-			href="{config.github}/src/posts/{slug}.md"
-			class="link link-hover font-semibold flex justify-start gap-2 items-center"
-			><span>Edit on GitHub</span> <ArrowRight size="18" /></a
-		>
+		<div class="flex justify-start items-center gap-4">
+			<a href="mailto:kitakayaloisa@gmail.com" class="flex justify-start items-center gap-2"
+				><span>Email </span><Mail /></a
+			>
+			|
+			<a href="https://twitter.com/FreedomLoisa" class="flex justify-start items-center gap-2"
+				><span>Twitter </span><Twitter /></a
+			>
+			|
+			<a href="https://github.com/LoisaKitakaya" class="flex justify-start items-center gap-2"
+				><span>Github </span><Github /></a
+			>
+		</div>
 	</div>
 </section>
