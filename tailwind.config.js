@@ -6,8 +6,8 @@ export default {
 	},
 	plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms'), require('daisyui')],
 	daisyui: {
-		themes: ['winter', 'night'],
-		darkTheme: 'night',
+		themes: ['fantasy', 'dracula'],
+		darkTheme: 'dracula',
 		base: true,
 		styled: true,
 		utils: true,

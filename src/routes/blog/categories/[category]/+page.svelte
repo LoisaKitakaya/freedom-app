@@ -4,6 +4,7 @@
 	export let data
 
 	const { posts } = data
+	const { category } = data
 
 	const categories = [
 		'programming',
@@ -19,24 +20,14 @@
 </script>
 
 <svelte:head>
-	<title>{config.title} | Blog</title>
+	<title>{config.title} | Categories</title>
 </svelte:head>
 
 <section>
 	<div class="flex justify-between items-center mb-10">
-		<h1 class="text-4xl">Read something</h1>
+		<h1 class="text-4xl">Categories</h1>
 		<div class="dropdown dropdown-bottom dropdown-end">
-			<label tabindex="0" class="btn btm-sm btn-ghost">Categories</label>
-			<ul
-				tabindex="0"
-				class="dropdown-content z-[1] menu p-4 shadow-sm bg-base-100 rounded-box w-40 border"
-			>
-				{#each categories as category}
-					<li>
-						<a href="{config.url}/blog/categories/{category}">{category}</a>
-					</li>
-				{/each}
-			</ul>
+			<button class="btn btm-sm btn-ghost" on:click={() => window.history.back()}>Back</button>
 		</div>
 	</div>
 
@@ -65,7 +56,7 @@
 		</div>
 	{:else}
 		<div>
-			<h1 class="text-xl font-semibold text-center">No posts have been posted yet</h1>
+			<h1 class="text-xl font-semibold text-center">No posts for category {category}</h1>
 		</div>
 	{/if}
 </section>

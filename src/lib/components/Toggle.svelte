@@ -4,7 +4,7 @@
 	import { theme, toggleTheme } from '$lib/theme'
 </script>
 
-{#if $theme === 'night'}
+{#if $theme === 'dracula'}
 	<button on:click={toggleTheme} aria-label="Toggle theme" in:fly={{ y: 10 }}>
 		<Moon />
 	</button>
