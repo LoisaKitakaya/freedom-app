@@ -1,6 +1,6 @@
 export const prerender = true
 
-export async function load({ url }) {
+export const load = async ({ url }) => {
 	return {
 		url: url.pathname
 	}

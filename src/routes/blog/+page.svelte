@@ -40,26 +40,32 @@
 		</div>
 	</div>
 
-	<div class="grid grid-cols-3 gap-4">
-		{#each posts as post}
-			<a href="/blog/{post.slug}">
-				<div
-					class="card bg-base-200 text-base-content shadow h-full w-full mb-4 hover:border-primary-focus hover:border border border-transparent transition-all"
-				>
-					<div class="card-body">
-						<h2 class="card-title text-2xl">{post.title}</h2>
-						<p>{post.description}</p>
-						<p class="font-semibold">
-							Categories:
+	{#if posts.length > 0}
+		<div class="grid grid-cols-3 gap-4">
+			{#each posts as post}
+				<a href="/blog/{post.slug}">
+					<div
+						class="card bg-base-200 text-base-content shadow h-full w-full mb-4 hover:border-primary-focus hover:border border border-transparent transition-all"
+					>
+						<div class="card-body">
+							<h2 class="card-title text-2xl">{post.title}</h2>
+							<p>{post.description}</p>
+							<p class="font-semibold">
+								Categories:
 
-							{#each post.categories as category}
-								<span>| {category} </span>
-							{/each}
-						</p>
-						<p class="italic text-sm">Published: {moment(post.date).fromNow()}</p>
+								{#each post.categories as category}
+									<span>| {category} </span>
+								{/each}
+							</p>
+							<p class="italic text-sm">Published: {moment(post.date).fromNow()}</p>
+						</div>
 					</div>
-				</div>
-			</a>
-		{/each}
-	</div>
+				</a>
+			{/each}
+		</div>
+	{:else}
+		<div>
+			<h1 class="text-xl font-semibold text-center">No posts have been posted yet</h1>
+		</div>
+	{/if}
 </section>
