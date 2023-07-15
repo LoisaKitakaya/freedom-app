@@ -5,6 +5,10 @@
 	import { fade } from 'svelte/transition'
 </script>
 
+<svelte:head>
+	<title>{config.title} | About</title>
+</svelte:head>
+
 <div
 	class="flex justify-center items-center"
 	out:fade={{ duration: 400 }}
