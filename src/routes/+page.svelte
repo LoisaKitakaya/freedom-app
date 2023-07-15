@@ -22,8 +22,7 @@
 	<title>{config.title} | Home</title>
 </svelte:head>
 
-<div out:fade={{ duration: 400 }}
-	in:fade={{ delay: 400, duration: 400 }}>
+<div out:fade={{ duration: 400 }} in:fade={{ delay: 400, duration: 400 }}>
 	<h1 class="text-lg mb-8 text-center underline">My recent <strong>GitHub</strong> activity</h1>
 
 	<section class="w-3/5 mx-auto">

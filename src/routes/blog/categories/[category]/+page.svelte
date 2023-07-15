@@ -8,23 +8,14 @@
 	const { posts } = data
 	const { category } = data
 
-	const categories = [
-		'programming',
-		'javascript',
-		'python',
-		'django',
-		'svelte',
-		'flask',
-		'misc',
-	]
+	const categories = ['programming', 'javascript', 'python', 'django', 'svelte', 'flask', 'misc']
 </script>
 
 <svelte:head>
 	<title>{config.title} | Categories</title>
 </svelte:head>
 
-<section out:fade={{ duration: 400 }}
-	in:fade={{ delay: 400, duration: 400 }}>
+<section out:fade={{ duration: 400 }} in:fade={{ delay: 400, duration: 400 }}>
 	<div class="flex justify-between items-center mb-10">
 		<h1 class="text-4xl">Categories</h1>
 		<div class="dropdown dropdown-bottom dropdown-end">

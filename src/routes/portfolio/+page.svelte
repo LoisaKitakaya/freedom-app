@@ -12,8 +12,7 @@
 	<title>{config.title} | Blog</title>
 </svelte:head>
 
-<section out:fade={{ duration: 400 }}
-	in:fade={{ delay: 400, duration: 400 }}>
+<section out:fade={{ duration: 400 }} in:fade={{ delay: 400, duration: 400 }}>
 	<h1 class="text-4xl mb-10">My Work</h1>
 
 	{#if posts.length > 0}

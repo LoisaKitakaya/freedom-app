@@ -17,8 +17,7 @@
 	<meta property="og:title" content={meta.title} />
 </svelte:head>
 
-<article class="mb-10" out:fade={{ duration: 400 }}
-	in:fade={{ delay: 400, duration: 400 }}>
+<article class="mb-10" out:fade={{ duration: 400 }} in:fade={{ delay: 400, duration: 400 }}>
 	<div class="flex justify-between mx-auto w-fit">
 		<div>
 			<div class="flex justify-between items-center">

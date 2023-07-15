@@ -27,5 +27,3 @@ export type Post = {
 	categories: Categories[]
 	published: boolean
 }
-
-
