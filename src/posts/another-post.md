@@ -7,7 +7,7 @@ date: '2023-07-14'
 
 categories:
     - python
-    - javaScript
+    - javascript
     
 published: true
 ---
