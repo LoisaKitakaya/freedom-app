@@ -3,23 +3,15 @@
 
 	import Footer from '$lib/components/Footer.svelte'
 	import Header from '$lib/components/Header.svelte'
-
-	export let data
-
-	const { url } = data
 </script>
 
-<div class="layout">
-	<Header />
+<Header />
 
-	{#key url}
-		<main class="px-6 py-2">
-			<slot />
-		</main>
-	{/key}
+<main class="px-6 py-2">
+	<slot />
+</main>
 
-	<Footer />
-</div>
+<Footer />
 
 <style>
 	main {

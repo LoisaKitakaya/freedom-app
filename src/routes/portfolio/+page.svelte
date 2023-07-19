@@ -16,7 +16,7 @@
 	<h1 class="text-4xl mb-10">My Work</h1>
 
 	{#if posts.length > 0}
-		<div class="grid grid-cols-3 gap-4">
+		<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 			{#each posts as post}
 				<a href="/portfolio/{post.slug}">
 					<div
