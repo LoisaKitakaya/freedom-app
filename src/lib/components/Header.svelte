@@ -18,7 +18,7 @@
 		<a href="/" class="px-4 normal-case text-2xl font-semibold">{config.title}</a>
 	</div>
 	<div class="navbar-end sm:hidden">
-		<div class="dropdown">
+		<div class="dropdown dropdown-end">
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<!-- svelte-ignore a11y-label-has-associated-control -->
 			<label tabindex="0" class="btn btn-ghost btn-circle">
@@ -27,15 +27,15 @@
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<ul
 				tabindex="0"
-				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-28 border"
 			>
-				<li>
+				<li class="text-lg">
 					<a href="/about">About</a>
 				</li>
-				<li>
+				<li class="text-lg">
 					<a href="/blog">Blog</a>
 				</li>
-				<li>
+				<li class="text-lg">
 					<a href="/portfolio">Portfolio</a>
 				</li>
 			</ul>

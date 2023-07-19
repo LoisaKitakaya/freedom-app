@@ -3,7 +3,7 @@
 	import { Github, Twitter, Rss, Mail } from 'lucide-svelte'
 </script>
 
-<footer class="flex flex-col sm:flex-row gap-4 justify-between items-center p-4 bg-base-100 text-base-content mt-8">
+<footer class="flex flex-col sm:flex-row gap-4 justify-between items-center p-4 bg-base-100 text-base-content mt-4 sm:mt-8 mb-4 sm:mb-0">
 	<div class="flex justify-start items-center">
 		<p class="text-lg">{config.title} &copy {new Date().getFullYear()}</p>
 	</div>
