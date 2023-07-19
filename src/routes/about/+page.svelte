@@ -10,11 +10,11 @@
 </svelte:head>
 
 <div
-	class="flex justify-center items-center"
+	class="flex flex-col sm:flex-row gap-4 sm:gap-0 justify-center items-center"
 	out:fade={{ duration: 400 }}
 	in:fade={{ delay: 400, duration: 400 }}
 >
-	<div class="prose m-0 sm:ml-8">
+	<div class="prose m-0 sm:ml-8 text-center sm:text-left mb-4 sm:mb-0">
 		<p>
 			Hello there! I'm {config.title}, a freelance full-stack web developer passionate about
 			creating impactful digital experiences. With expertise in Python and JavaScript, I possess the

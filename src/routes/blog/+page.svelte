@@ -36,7 +36,7 @@
 	</div>
 
 	{#if posts.length > 0}
-		<div class="grid grid-cols-3 gap-4">
+		<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 			{#each posts as post}
 				<a href="/blog/{post.slug}">
 					<div

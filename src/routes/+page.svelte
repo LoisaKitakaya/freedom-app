@@ -25,9 +25,9 @@
 <div out:fade={{ duration: 400 }} in:fade={{ delay: 400, duration: 400 }}>
 	<h1 class="text-lg mb-8 text-center underline">My recent <strong>GitHub</strong> activity</h1>
 
-	<section class="w-3/5 mx-auto">
+	<section class="w-full sm:w-3/5 mx-0 sm:mx-auto">
 		{#each events as event (event.id)}
-			<div class="py-4 px-10 mb-4 flex justify-start items-center gap-4">
+			<div class="py-2 sm:py-4 px-4 sm:px-10 mb-4 flex justify-start items-center gap-4">
 				<div class="tooltip" data-tip={event.actor.login}>
 					<a href={event.actor.url}
 						><div class="avatar">
@@ -52,7 +52,7 @@
 					<p><span class="font-semibold">Last:</span> {moment(event.created_at).fromNow()}</p>
 				</div>
 			</div>
-			<details class="collapse bg-base-200">
+			<details class="collapse bg-base-200 w-full">
 				<summary class="collapse-title">Show Payload - Click to open/close</summary>
 				<div class="collapse-content">
 					<pre class="overflow-x-auto">
