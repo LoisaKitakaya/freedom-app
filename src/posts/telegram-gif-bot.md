@@ -503,7 +503,6 @@ We have defined some helper functions, which are documented in summary in the co
 
 > _Check: [Commands](https://core.telegram.org/api/bots/commands), and [Bot commands explained](https://core.telegram.org/bots/features#commands)._
 
-
 - `giphy_response = None`: Initializes the variable `giphy_response` to `None`, which will store the response received from the GIPHY API after querying for GIFs or stickers.
 
 - `parsed_data = parse_data(callback)`: This line calls the `parse_data()` function with the `callback` data as an argument. The `parse_data()` function extracts relevant information from the Telegram `JSON` data, such as the chat ID and the message text.
