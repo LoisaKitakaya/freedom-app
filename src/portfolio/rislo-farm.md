@@ -9,8 +9,10 @@ published: true
 ---
 
 <script>
-  import Carousel from './components/Carousel.svelte'
+  import Rislo from './components/Rislo.svelte'
 </script>
+
+<Rislo />
 
 ## Rislo Farm - Farm Management Web Application
 
@@ -49,8 +51,6 @@ The Rislo Farm web application boasts the following essential features:
 > _"Collaborating with Loisa Kitakaya on our farm's web application was an absolute pleasure. Loisa attentively listened to our requirements and translated our vision into an outstanding reality. The new web application has significantly enhanced our farm's operations."_ - Testimonial from the Owners of Rislo Farm.
 
 #### Website
-
-<Carousel />
 
 Visit the Rislo Farm web application to explore its functionalities:
 
