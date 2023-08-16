@@ -1,20 +1,11 @@
 <script lang="ts">
-	import '../app.css'
-
 	import Footer from '$lib/components/Footer.svelte'
 	import Header from '$lib/components/Header.svelte'
+	import '../app.css'
 </script>
 
 <Header />
 
-<main class="px-6 py-2">
-	<slot />
-</main>
+<slot />
 
 <Footer />
-
-<style>
-	main {
-		min-height: 73vh !important;
-	}
-</style>

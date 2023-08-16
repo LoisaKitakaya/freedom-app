@@ -1,16 +1,58 @@
 <script lang="ts">
 	import * as config from '$lib/config'
-	import { Github, Twitter, Rss, Mail } from 'lucide-svelte'
+	import { Github, Twitter, Rss, Mail, ChevronLeft, ChevronRight } from 'lucide-svelte'
+	import { onMount } from 'svelte'
+
+	const routes = ['/', '/about', '/portfolio', '/reviews', '/contact']
+
+	let previous: string
+	let next: string
+
+	onMount(() => {
+		const currentPath = window.location.pathname
+
+		const currentIndex = routes.indexOf(currentPath)
+		if (currentIndex >= 0) {
+			previous = routes[currentIndex - 1] || '/'
+			next = routes[currentIndex + 1] || '/'
+		}
+	})
+
+	const navigate = (path: string) => {
+		window.location.href = path
+	}
 </script>
 
-<footer class="flex flex-col sm:flex-row gap-4 justify-between items-center p-4 bg-base-100 text-base-content mt-4 sm:mt-8 mb-4 sm:mb-0">
-	<div class="flex justify-start items-center">
-		<p class="text-lg">{config.title} &copy {new Date().getFullYear()}</p>
-	</div>
-	<div class="flex justify-end items-center gap-4">
-		<a href="{config.url}/rss.xml" target="_blank"><Rss /></a>
-		<a href="mailto:kitakayaloisa@gmail.com"><Mail /></a>
-		<a href="https://twitter.com/FreedomLoisa"><Twitter /></a>
-		<a href="https://github.com/LoisaKitakaya"><Github /></a>
-	</div>
-</footer>
+<div id="socials" class="flex justify-center items-center gap-4">
+	<a href="{config.url}/rss.xml" target="_blank"><Rss /></a>
+	<a href="mailto:kitakayaloisa@gmail.com"><Mail /></a>
+	<a href="https://twitter.com/FreedomLoisa"><Twitter /></a>
+	<a href="https://github.com/LoisaKitakaya"><Github /></a>
+</div>
+
+<div id="arrows">
+	<button id="nav-left" on:click={() => navigate(previous)}>
+		<ChevronLeft />
+	</button>
+	<button id="nav-right" on:click={() => navigate(next)}>
+		<ChevronRight />
+	</button>
+</div>
+
+<style>
+	#socials {
+		position: fixed;
+		bottom: 2rem;
+		left: 3rem;
+	}
+
+	#arrows {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 2rem;
+		position: fixed;
+		bottom: 2rem;
+		right: 3rem;
+	}
+</style>
