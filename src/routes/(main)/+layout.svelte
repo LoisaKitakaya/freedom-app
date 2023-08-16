@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../../app.css'
-	import { Menu, Moon, Sun } from 'lucide-svelte'
+	import { Menu } from 'lucide-svelte'
 
 	import Header from '$lib/components/layout/Header.svelte'
 	import Footer from '$lib/components/layout/Footer.svelte'

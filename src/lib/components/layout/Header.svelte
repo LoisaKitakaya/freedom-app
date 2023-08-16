@@ -3,7 +3,7 @@
 	import type { SubmitFunction } from '../../../routes/(main)/$types'
 	import { fly } from 'svelte/transition'
 
-	import { Menu, Moon, Sun } from 'lucide-svelte'
+	import { Moon, Sun } from 'lucide-svelte'
 
 	let mode: string
 
