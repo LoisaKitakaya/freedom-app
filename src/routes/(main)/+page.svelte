@@ -9,7 +9,7 @@
 	<title>{config.title} | Home</title>
 </svelte:head>
 
-<section class="px-8 sm:px-0 main-section">
+<section class="px-8 sm:px-0 w-full main-section">
 	<div id="text-container" class="w-full sm:w-6/12 h-fit m-auto">
 		<Greet />
 		<Name />

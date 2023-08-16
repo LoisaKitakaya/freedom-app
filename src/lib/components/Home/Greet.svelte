@@ -4,10 +4,11 @@
 
 	const type = () => {
 		new Typed('#greet', {
-			strings: ["Hi I'm"],
+			strings: ["Hello, ^600 I'm", "Hi, ^600 I'm"],
 			typeSpeed: 55,
+			backSpeed: 55,
 			startDelay: 500,
-            showCursor: false,
+			showCursor: false
 		})
 	}
 

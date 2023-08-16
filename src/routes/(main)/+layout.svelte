@@ -1,15 +1,20 @@
 <script lang="ts">
 	import '../../app.css'
+
 	import { Menu } from 'lucide-svelte'
 
 	import Header from '$lib/components/layout/Header.svelte'
 	import Footer from '$lib/components/layout/Footer.svelte'
+
+	import { fade } from 'svelte/transition'
+
+	export let data
 </script>
 
 <div class="drawer">
 	<input id="my-drawer" type="checkbox" class="drawer-toggle" />
 	<div class="drawer-content">
-		<div id="menu">
+		<div id="menu" class="z-20">
 			<label for="my-drawer" id="menu-btn" class="drawer-button cursor-pointer">
 				<Menu />
 			</label>
@@ -19,13 +24,17 @@
 
 		<Header />
 
-		<slot />
+		{#key data.url}
+			<div out:fade={{ duration: 400 }} in:fade={{ delay: 400, duration: 400 }}>
+				<slot />
+			</div>
+		{/key}
 
 		<Footer />
 
 		<!--  -->
 	</div>
-	<div class="drawer-side z-10">
+	<div class="drawer-side z-30">
 		<label for="my-drawer" class="drawer-overlay" />
 		<ul class="menu p-4 w-60 h-full bg-base-200 text-base-content">
 			<p class="pl-4 text-xl font-semibold mb-4">Menu</p>

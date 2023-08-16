@@ -24,20 +24,24 @@
 	}
 </script>
 
-<div id="socials" class="flex justify-center items-center gap-4">
+<div id="socials" class="flex justify-center items-center gap-4 z-20">
 	<a href="{config.url}/rss.xml" target="_blank"><Rss /></a>
 	<a href="mailto:kitakayaloisa@gmail.com"><Mail /></a>
 	<a href="https://twitter.com/FreedomLoisa"><Twitter /></a>
 	<a href="https://github.com/LoisaKitakaya"><Github /></a>
 </div>
 
-<div id="arrows">
-	<button id="nav-left" on:click={() => navigate(previous)}>
-		<ChevronLeft />
-	</button>
-	<button id="nav-right" on:click={() => navigate(next)}>
-		<ChevronRight />
-	</button>
+<div id="arrows" class="z-20">
+	<div class="tooltip" data-tip="previous">
+		<button id="nav-left" on:click={() => navigate(previous)}>
+			<ChevronLeft />
+		</button>
+	</div>
+	<div class="tooltip" data-tip="next">
+		<button id="nav-right" on:click={() => navigate(next)}>
+			<ChevronRight />
+		</button>
+	</div>
 </div>
 
 <style>
@@ -59,13 +63,13 @@
 
 	@media only screen and (max-width: 600px) {
 		#socials {
-			bottom: 1rem;
-			left: 1rem;
+			bottom: 1rem !important;
+			left: 1rem !important;
 		}
 
 		#arrows {
-			bottom: 1rem;
-			right: 1rem;
+			bottom: 1rem !important;
+			right: 1rem !important;
 		}
 	}
 </style>

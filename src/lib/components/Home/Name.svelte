@@ -4,9 +4,9 @@
 
 	const type = () => {
 		new Typed('#name', {
-			strings: ['Loisa Kitakaya'],
+			strings: ['Loisa ^100 Kitakaya'],
 			typeSpeed: 65,
-			startDelay: 2000,
+			startDelay: 6200,
             showCursor: false,
 		})
 	}

@@ -1,9 +1,9 @@
 <script lang="ts">
+	import { fly } from 'svelte/transition'
+	import { Moon, Sun } from 'lucide-svelte'
 	import { enhance } from '$app/forms'
 	import type { SubmitFunction } from '../../../routes/(main)/$types'
-	import { fly } from 'svelte/transition'
 
-	import { Moon, Sun } from 'lucide-svelte'
 
 	let mode: string
 
@@ -17,7 +17,7 @@
 	}
 </script>
 
-<div id="nav">
+<div id="nav" class="z-20">
 	<form method="POST" use:enhance={updateTheme}>
 		{#if mode !== 'dracula'}
 			<button formaction="/?/setTheme&theme=dracula" aria-label="Toggle dark" in:fly={{ y: -10 }}>
