@@ -31,7 +31,13 @@
 			<p class="pl-4 text-xl font-semibold mb-4">Menu</p>
 			<!-- Sidebar content here -->
 			<li><a href="/blog">Blog</a></li>
-			<li><a href="/">Resume</a></li>
+			<li>
+				<a
+					target="_blank"
+					href="https://docs.google.com/document/d/1xdDYapWIythGyEJSzIcF7bEwxwAeV3O9sfvzAo27v6g/edit?usp=sharing"
+					>Resume</a
+				>
+			</li>
 			<li><a href="/github">GitHub Activity</a></li>
 		</ul>
 	</div>
