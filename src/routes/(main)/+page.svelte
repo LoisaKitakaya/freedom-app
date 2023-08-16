@@ -1,0 +1,34 @@
+<script>
+	import Greet from '$lib/components/Home/Greet.svelte'
+	import Intro from '$lib/components/Home/Intro.svelte'
+	import Name from '$lib/components/Home/Name.svelte'
+</script>
+
+<svelte:head>
+	<title>Home</title>
+</svelte:head>
+
+<section class="px-8 sm:px-0">
+	<div id="text-container" class="w-full sm:w-6/12 h-fit m-auto">
+		<Greet />
+		<Name />
+		<div class="divider" />
+		<Intro />
+	</div>
+	<span id="typed" />
+</section>
+
+<style>
+	section {
+		height: 100vh;
+	}
+
+	#text-container {
+		padding-top: 7rem;
+	}
+
+	.divider {
+		margin: 0;
+		padding: 0;
+	}
+</style>
