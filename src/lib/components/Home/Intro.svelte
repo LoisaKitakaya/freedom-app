@@ -4,9 +4,9 @@
 
 	const type = () => {
 		new Typed('#intro', {
-			strings: ['A full-stack ^300 web applications developer 🚀'],
-			typeSpeed: 60,
-			startDelay: 8800,
+			strings: ['A full-stack  web applications developer ^1000 🚀'],
+			typeSpeed: 55,
+			startDelay: 8100,
             showCursor: false,
 		})
 	}

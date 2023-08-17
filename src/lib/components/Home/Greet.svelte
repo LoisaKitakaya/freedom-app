@@ -4,7 +4,7 @@
 
 	const type = () => {
 		new Typed('#greet', {
-			strings: ["Hello, ^600 I'm", "Hi, ^600 I'm"],
+			strings: ["Wasuup! My ^600", "Hi, I'm"],
 			typeSpeed: 55,
 			backSpeed: 55,
 			startDelay: 500,

@@ -144,12 +144,16 @@
 			</div>
 		{/if}
 	</div>
-	<div class="mt-4 flex justify-center align-center gap-4">
+	<div class="mt-4 flex justify-center align-center gap-8">
 		<div class="tooltip tooltip-left" data-tip="previous project">
-			<button on:click={() => changeIndex('left')}><ChevronsLeft /></button>
+			<button on:click={() => changeIndex('left')} class="btn btn-circle btn-sm"
+				><ChevronsLeft /></button
+			>
 		</div>
 		<div class="tooltip tooltip-right" data-tip="next project">
-			<button on:click={() => changeIndex('right')}><ChevronsRight /></button>
+			<button on:click={() => changeIndex('right')} class="btn btn-circle btn-sm"
+				><ChevronsRight /></button
+			>
 		</div>
 	</div>
 </div>

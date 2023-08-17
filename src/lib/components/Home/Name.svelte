@@ -5,8 +5,8 @@
 	const type = () => {
 		new Typed('#name', {
 			strings: ['Loisa ^100 Kitakaya'],
-			typeSpeed: 65,
-			startDelay: 6200,
+			typeSpeed: 55,
+			startDelay: 5300,
             showCursor: false,
 		})
 	}
