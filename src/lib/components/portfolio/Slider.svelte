@@ -93,7 +93,7 @@
 	<div class="tab-content">
 		{#if activeTab === 'screenshots'}
 			<p class="text-xl text-center mt-2 underline">{detail.title}</p>
-			<div class="cont bg-base-100">
+			<div class="cont bg-base-100 rounded-md">
 				<div class="carousel-container">
 					<!-- svelte-ignore a11y-no-static-element-interactions -->
 					<!-- svelte-ignore a11y-mouse-events-have-key-events -->
@@ -112,7 +112,7 @@
 		{/if}
 		{#if activeTab === 'details'}
 			<p class="text-xl text-center mt-2 underline">{detail.title}</p>
-			<div class="cont bg-base-100">
+			<div class="cont bg-base-100 rounded-md p-4">
 				<div class="mb-3">
 					<span class="font-semibold">Description:</span>
 					<p>{detail.description}</p>

@@ -3,7 +3,7 @@
 		"title": "Rislo Farm",
 		"description": "This project was about giving a local farm an online presence and automating some of their operations, e.g. sales, and production recording, as well as automatic report generation and notification.",
 		"technologies": ["Flask (Backend)", "Sveltekit (Frontend)", "MongoDB (Database)"],
-		"role": "I was the lead full-stack developer for this project. I was responsible for creating the backend, frontend, configuring the database and making sure the application is up and running.",
+		"role": "Full-stack developer.",
 		"features": [
 			"Unique, simple and responsive design",
 			"Cool themes",
@@ -58,7 +58,7 @@
 		"title": "Finance Fluent",
 		"description": "This project was about creating a financial tool to maximize productivity and profits among SMEs in Kenya.",
 		"technologies": ["Django", "React", "GraphQL", "PostgreSQL"],
-		"role": "I was the lead backend-developer for this project. My main responsibilities were to create a robust backend and API for integration with the frontend",
+		"role": "Full-stack developer.",
 		"features": [
 			"Fancy and responsive design",
 			"Secure database",

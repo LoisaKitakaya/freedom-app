@@ -3,7 +3,7 @@
 
 	import { onMount } from 'svelte'
 
-	const routes = ['/', '/about', '/portfolio', '/reviews', '/contact']
+	const routes = ['/', '/about', '/portfolio', '/contact']
 
 	let previous: string
 	let next: string
