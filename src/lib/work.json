@@ -1,0 +1,100 @@
+[
+	{
+		"title": "Rislo Farm",
+		"description": "This project was about giving a local farm an online presence and automating some of their operations, e.g. sales, and production recording, as well as automatic report generation and notification.",
+		"technologies": ["Flask (Backend)", "Sveltekit (Frontend)", "MongoDB (Database)"],
+		"role": "I was the lead full-stack developer for this project. I was responsible for creating the backend, frontend, configuring the database and making sure the application is up and running.",
+		"features": [
+			"Unique, simple and responsive design",
+			"Cool themes",
+			"User authentication and authorization",
+			"Auto reporting"
+		],
+		"images": [
+			{
+				"id": 1,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Rislo/Screenshot%20from%202023-08-06%2016-20-31.png?updatedAt=1691328230096"
+			},
+			{
+				"id": 2,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Rislo/Screenshot%20from%202023-08-06%2016-22-05.png?updatedAt=1691328228157"
+			},
+			{
+				"id": 3,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Rislo/Screenshot%20from%202023-08-06%2016-21-36.png?updatedAt=1691328228124"
+			},
+			{
+				"id": 4,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Rislo/Screenshot%20from%202023-08-06%2016-21-09.png?updatedAt=1691328228098"
+			},
+			{
+				"id": 5,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Rislo/Screenshot%20from%202023-08-06%2016-21-54.png?updatedAt=1691328227785"
+			},
+			{
+				"id": 6,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Rislo/Screenshot%20from%202023-08-06%2016-21-50.png?updatedAt=1691328227781"
+			},
+			{
+				"id": 7,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Rislo/Screenshot%20from%202023-08-06%2016-21-28.png?updatedAt=1691328227508"
+			},
+			{
+				"id": 8,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Rislo/Screenshot%20from%202023-08-06%2016-22-15.png?updatedAt=1691328227170"
+			},
+			{
+				"id": 9,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Rislo/Screenshot%20from%202023-08-06%2016-22-25.png?updatedAt=1691328227115"
+			},
+			{
+				"id": 10,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Rislo/Screenshot%20from%202023-08-06%2016-22-33.png?updatedAt=1691328226865"
+			}
+		],
+		"link": "https://rislofarm.vercel.app/"
+	},
+	{
+		"title": "Finance Fluent",
+		"description": "This project was about creating a financial tool to maximize productivity and profits among SMEs in Kenya.",
+		"technologies": ["Django", "React", "GraphQL", "PostgreSQL"],
+		"role": "I was the lead backend-developer for this project. My main responsibilities were to create a robust backend and API for integration with the frontend",
+		"features": [
+			"Fancy and responsive design",
+			"Secure database",
+			"User authentication and authorization",
+			"Data analytics"
+		],
+		"images": [
+			{
+				"id": 1,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Fluent/Screenshot%20from%202023-08-07%2015-30-23.png?updatedAt=1691484090301"
+			},
+			{
+				"id": 2,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Fluent/Screenshot%20from%202023-08-07%2015-30-33.png?updatedAt=1691484089988"
+			},
+			{
+				"id": 3,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Fluent/Screenshot%20from%202023-08-07%2015-30-16.png?updatedAt=1691484089549"
+			},
+			{
+				"id": 4,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Fluent/Screenshot%20from%202023-08-07%2015-31-07.png?updatedAt=1691484089338"
+			},
+			{
+				"id": 5,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Fluent/Screenshot%20from%202023-08-07%2015-31-18.png?updatedAt=1691484087694"
+			},
+			{
+				"id": 6,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Fluent/Screenshot%20from%202023-08-07%2015-36-10.png?updatedAt=1691484087600"
+			},
+			{
+				"id": 7,
+				"url": "https://ik.imagekit.io/vg0ett8n6/Fluent/Screenshot%20from%202023-08-07%2015-31-13.png?updatedAt=1691484087251"
+			}
+		],
+		"link": "https://finance-fluent-web.netlify.app/"
+	}
+]
