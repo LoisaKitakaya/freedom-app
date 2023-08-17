@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Github, Twitter, Rss, Mail, ChevronLeft, ChevronRight } from 'lucide-svelte'
+	import { Github, Twitter, Mail, ChevronLeft, ChevronRight } from 'lucide-svelte'
 
 	import * as config from '$lib/config'
 	import { onMount } from 'svelte'
@@ -25,19 +25,18 @@
 </script>
 
 <div id="socials" class="flex justify-center items-center gap-4 z-20">
-	<a href="{config.url}/rss.xml" target="_blank"><Rss /></a>
 	<a href="mailto:kitakayaloisa@gmail.com"><Mail /></a>
 	<a href="https://twitter.com/FreedomLoisa"><Twitter /></a>
 	<a href="https://github.com/LoisaKitakaya"><Github /></a>
 </div>
 
 <div id="arrows" class="z-20">
-	<div class="tooltip" data-tip="previous">
+	<div class="tooltip" data-tip="{previous}">
 		<button id="nav-left" on:click={() => navigate(previous)}>
 			<ChevronLeft />
 		</button>
 	</div>
-	<div class="tooltip" data-tip="next">
+	<div class="tooltip" data-tip="{next}">
 		<button id="nav-right" on:click={() => navigate(next)}>
 			<ChevronRight />
 		</button>

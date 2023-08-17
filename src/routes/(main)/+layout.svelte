@@ -39,7 +39,7 @@
 		<ul class="menu p-4 w-60 h-full bg-base-200 text-base-content">
 			<p class="pl-4 text-xl font-semibold mb-4">Menu</p>
 			<!-- Sidebar content here -->
-			<li><a href="/blog">Blog</a></li>
+			<li><a href="/shop">Shop</a></li>
 			<li>
 				<a
 					target="_blank"
