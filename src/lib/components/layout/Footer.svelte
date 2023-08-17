@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { Github, Twitter, Mail, ChevronLeft, ChevronRight } from 'lucide-svelte'
 
-	import * as config from '$lib/config'
 	import { onMount } from 'svelte'
 
 	const routes = ['/', '/about', '/portfolio', '/reviews', '/contact']
