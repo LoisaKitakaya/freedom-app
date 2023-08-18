@@ -1,4 +1,5 @@
-import { PUBLIC_OCTOKIT_TOKEN, PUBLIC_GITHUB_USERNAME } from '$env/static/public'
+import { OCTOKIT_TOKEN, GITHUB_USERNAME, GMAIL_PASSWORD } from '$env/static/private'
 
-export const okToken = PUBLIC_OCTOKIT_TOKEN
-export const githubUser = PUBLIC_GITHUB_USERNAME
+export const okToken = OCTOKIT_TOKEN
+export const githubUser = GITHUB_USERNAME
+export const gmailPassword = GMAIL_PASSWORD
