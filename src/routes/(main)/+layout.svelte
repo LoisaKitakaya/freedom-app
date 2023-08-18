@@ -14,8 +14,7 @@
 	let isNavLinksVisible = false
 
 	onMount(() => {
-		// This will run after the component is mounted
-		isNavLinksVisible = false // Initially hide nav links
+		isNavLinksVisible = false
 	})
 
 	function toggleNavLinks() {
