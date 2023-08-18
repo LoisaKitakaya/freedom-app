@@ -22,7 +22,7 @@
 
 				await update()
 			} else {
-				toast.error("Something went wrong")
+				toast.error('Something went wrong')
 			}
 		}
 	}
@@ -47,6 +47,7 @@
 					name="firstName"
 					placeholder="e.g. John"
 					class="input input-bordered w-full max-w-xs"
+					required
 				/>
 			</div>
 			<div class="flex justify-start flex-col gap-2">
@@ -56,6 +57,7 @@
 					name="lastName"
 					placeholder="e.g. Doe"
 					class="input input-bordered w-full max-w-xs"
+					required
 				/>
 			</div>
 		</div>
@@ -66,11 +68,12 @@
 				name="email"
 				placeholder="e.g. johndoe@email.com"
 				class="input input-bordered w-full"
+				required
 			/>
 		</div>
 		<div class="mb-3 flex justify-start flex-col gap-2">
 			<label for="">Subject</label>
-			<select name="subject" class="select select-bordered w-full">
+			<select name="subject" class="select select-bordered w-full" required>
 				<option value="I want to hire you">I Want To Hire You</option>
 				<option value="Pre-built apps">Pre Built Apps</option>
 				<option value="Just saying hi!">Just Saying Hi!</option>
@@ -78,7 +81,12 @@
 		</div>
 		<div class="mb-6 flex justify-start flex-col gap-2">
 			<label for="">Your Message</label>
-			<textarea name="message" class="textarea textarea-bordered" placeholder="How can I help?" />
+			<textarea
+				name="message"
+				class="textarea textarea-bordered"
+				placeholder="How can I help?"
+				required
+			/>
 		</div>
 		<button type="submit" class="btn btn-success w-full">Send</button>
 	</form>

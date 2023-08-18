@@ -49,6 +49,7 @@
 		"remark-unwrap-images": "^3.0.1",
 		"shiki": "^0.14.3",
 		"svelte-french-toast": "^1.2.0",
-		"typed.js": "^2.0.16"
+		"typed.js": "^2.0.16",
+		"zod": "^3.22.1"
 	}
 }
