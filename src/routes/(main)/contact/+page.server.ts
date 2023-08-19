@@ -1,6 +1,4 @@
 import type { Actions } from '@sveltejs/kit'
-import nodemailer from 'nodemailer'
-import { gmailPassword } from '$lib/secrets'
 
 export const actions: Actions = {
 	sendMessage: async ({ request }) => {
@@ -12,31 +10,7 @@ export const actions: Actions = {
 		const subject = formData.get('subject')
 		const message = formData.get('message')
 
-		const transporter = nodemailer.createTransport({
-			service: 'gmail',
-			auth: {
-				user: 'loisadevmode@gmail.com',
-				pass: gmailPassword
-			}
-		})
-
-		const mailOptions = {
-			to: 'kitakayaloisa@gmail.com',
-			subject: `${subject}`,
-			html: `<p>New message from potential client.</p>
-                       <br />
-                       <p>Name: ${firstName + ' ' + lastName}</p>
-                       <p>Email: ${email}</p>
-                       <p>Message: ${message}</p>`
-		}
-
-		transporter.sendMail(mailOptions, (err, info) => {
-			if (err) {
-				console.log(err)
-			} else {
-				console.log('Email sent: ' + info.response)
-			}
-		})
+		console.log(firstName + ' ' + lastName + ' ' + email + ' ' + subject + ' ' + message) 
 
 		return {
 			update: { status: 'success', message: 'Message sent successfully!' }

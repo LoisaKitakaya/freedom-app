@@ -10,5 +10,16 @@ export const actions: Actions = {
 				maxAge: 60 * 60 * 24 * 365
 			})
 		}
+	},
+	requestResume: async ({ request }) => {
+		const formData = await request.formData()
+
+		const email = formData.get('email')
+
+		console.log(email)
+
+		return {
+			update: { status: 'success', message: `Resume has been sent to ${email}` }
+		}
 	}
 }

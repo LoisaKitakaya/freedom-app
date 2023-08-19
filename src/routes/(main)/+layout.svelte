@@ -1,6 +1,9 @@
 <script lang="ts">
 	import '../../app.css'
 	import { onMount } from 'svelte'
+	import toast, { Toaster } from 'svelte-french-toast'
+	import type { SubmitFunction } from '@sveltejs/kit'
+	import { enhance } from '$app/forms'
 
 	import { Menu, Scroll, Gem, Github } from 'lucide-svelte'
 
@@ -15,10 +18,54 @@
 
 	onMount(() => {
 		isNavLinksVisible = false
+
+		let modal: HTMLElement | null
+
+		if (typeof window !== 'undefined') {
+			modal = document.getElementById('resume')
+		}
+
+		const openModal = () => {
+			//@ts-ignore
+			modal.showModal()
+		}
+
+		const closeModal = () => {
+			//@ts-ignore
+			modal.close()
+		}
+
+		//@ts-ignore
+		document.getElementById('resume-modal').addEventListener('click', openModal)
+		//@ts-ignore
+		document.getElementById('resume-close-modal').addEventListener('click', closeModal)
 	})
 
 	function toggleNavLinks() {
 		isNavLinksVisible = !isNavLinksVisible
+	}
+
+	const resume: SubmitFunction = ({ formElement, formData, action }) => {
+		return async ({ result, update }) => {
+			if (result.type === 'success') {
+				// @ts-ignore
+				const res = result.data.update
+
+				switch (res.status) {
+					case 'success':
+						toast.success(res.message)
+						console.log(res)
+						break
+					case 'error':
+						toast.success(res.message)
+						break
+				}
+
+				await update()
+			} else {
+				toast.error('Something went wrong')
+			}
+		}
 	}
 </script>
 
@@ -51,11 +98,7 @@
 			<p class="pl-4 text-xl font-semibold mb-4">Menu</p>
 			<!-- Sidebar content here -->
 			<li>
-				<a
-					target="_blank"
-					href="https://docs.google.com/document/d/1xdDYapWIythGyEJSzIcF7bEwxwAeV3O9sfvzAo27v6g/edit?usp=sharing"
-					><Scroll /> Resume</a
-				>
+				<button id="resume-modal"><Scroll /> Resume</button>
 			</li>
 			<li><a href="/github"><Github /> GitHub Activity</a></li>
 			<li><a href="/shop"><Gem /> Shop / Pre-built</a></li>
@@ -85,6 +128,28 @@
 		</ul>
 	</div>
 </div>
+
+<dialog id="resume" class="modal">
+	<div class="modal-box w-fit">
+		<button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" id="resume-close-modal"
+			>✕</button
+		>
+		<h3 class="font-bold text-lg mb-3">Get it in your inbox</h3>
+		<form action="/?/requestResume" method="POST" use:enhance={resume}>
+			<!-- modal body -->
+			<input
+				type="email"
+				required
+				name="email"
+				placeholder="Your email address"
+				class="input input-bordered w-full mb-3"
+			/>
+			<button type="submit" class="btn btn-success w-full">Submit</button>
+		</form>
+	</div>
+</dialog>
+
+<Toaster />
 
 <style>
 	#menu {
