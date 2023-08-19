@@ -1,7 +1,6 @@
 <script lang="ts">
 	import moment from 'moment'
 	import * as config from '$lib/config'
-	import { fade } from 'svelte/transition'
 
 	export let data
 
@@ -22,12 +21,12 @@
 	<title>{config.title} | Home</title>
 </svelte:head>
 
-<div out:fade={{ duration: 400 }} in:fade={{ delay: 400, duration: 400 }}>
-	<h1 class="text-lg mb-8 text-center underline">My recent <strong>GitHub</strong> activity</h1>
+<div class="pb-32 sm:pb-16 pt-16">
+	<h1 class="text-lg mb-8 text-center underline">My <strong>GitHub</strong> activity</h1>
 
-	<section class="w-full sm:w-3/5 mx-0 sm:mx-auto">
+	<section class="w-3/4 sm:w-3/6 mx-auto">
 		{#each events as event (event.id)}
-			<div class="py-2 sm:py-4 px-4 sm:px-10 mb-4 flex justify-start items-center gap-4">
+			<div class="py-2 sm:py-4 px-4 sm:px-10 mb-4 flex justify-center items-center gap-4">
 				<div class="tooltip" data-tip={event.actor.login}>
 					<a href={event.actor.url}
 						><div class="avatar">
@@ -52,16 +51,6 @@
 					<p><span class="font-semibold">Last:</span> {moment(event.created_at).fromNow()}</p>
 				</div>
 			</div>
-			<details class="collapse bg-base-200 w-full">
-				<summary class="collapse-title">Show Payload - Click to open/close</summary>
-				<div class="collapse-content">
-					<pre class="overflow-x-auto">
-						<code>
-							{format(event.payload)}
-						</code>
-					</pre>
-				</div>
-			</details>
 			<div class="divider">🔥</div>
 		{/each}
 	</section>
