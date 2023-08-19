@@ -100,7 +100,6 @@
 			<li>
 				<button id="resume-modal"><Scroll /> Resume</button>
 			</li>
-			<li><a href="/github"><Github /> GitHub Activity</a></li>
 			<li><a href="/shop"><Gem /> Shop / Pre-built</a></li>
 			<li>
 				<ul>
@@ -121,6 +120,9 @@
 						</li>
 						<li>
 							<a href="/contact">▶️ Contact</a>
+						</li>
+						<li>
+							<a href="/github">▶️ GitHub</a>
 						</li>
 					</div>
 				</ul>

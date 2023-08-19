@@ -2,7 +2,7 @@
 	import { fly } from 'svelte/transition'
 	import { Moon, Sun } from 'lucide-svelte'
 	import { enhance } from '$app/forms'
-	import type { SubmitFunction } from '../../../routes/(main)/$types'
+	import type { SubmitFunction } from '@sveltejs/kit';
 
 
 	let mode: string
