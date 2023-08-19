@@ -70,7 +70,7 @@
 	})
 </script>
 
-<div class="m-auto rounded-md w-full sm:w-3/5 pt-32 sm:pt-8 pb-32 sm:pb-0 px-8 sm:px-0">
+<div class="rounded-md w-full pt-32 sm:pt-8 pb-32 sm:pb-0">
 	<!-- svelte-ignore a11y-click-events-have-key-events -->
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div class="tabs w-fit m-auto">
@@ -93,7 +93,7 @@
 	<div class="tab-content">
 		{#if activeTab === 'screenshots'}
 			<p class="text-xl text-center mt-2 underline">{detail.title}</p>
-			<div class="cont bg-base-100 rounded-md">
+			<div class="cont bg-base-100 rounded-md w-full sm:w-3/5 m-auto">
 				<div class="carousel-container">
 					<!-- svelte-ignore a11y-no-static-element-interactions -->
 					<!-- svelte-ignore a11y-mouse-events-have-key-events -->
@@ -112,7 +112,7 @@
 		{/if}
 		{#if activeTab === 'details'}
 			<p class="text-xl text-center mt-2 underline">{detail.title}</p>
-			<div class="cont bg-base-100 rounded-md p-4">
+			<div class="cont bg-base-100 rounded-md p-4 w-full sm:w-3/5 m-auto px-8 sm:px-0">
 				<div class="mb-3">
 					<span class="font-semibold">Description:</span>
 					<p>{detail.description}</p>
