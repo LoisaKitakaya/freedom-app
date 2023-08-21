@@ -19,23 +19,22 @@ export const actions: Actions = {
 
 		const resumeEndpoint = `${backend}/resume/`
 
-		fetch(resumeEndpoint, {
+		const res = await fetch(resumeEndpoint, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({ email })
 		})
-			.then((response) => response.json())
-			.then((data) => {
-				console.log('Response from server:', data)
-			})
+			.then((res) => res.json())
 			.catch((error) => {
 				console.error('Error:', error)
 			})
 
-		return {
-			update: { status: 'success', message: `Resume has been sent to ${email}` }
+		if (res !== null) {
+			return {
+				update: { status: res.data.status, message: res.data.message }
+			}
 		}
 	}
 }

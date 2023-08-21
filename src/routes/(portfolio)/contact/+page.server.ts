@@ -1,7 +1,8 @@
 import type { Actions } from '@sveltejs/kit'
+import { backend } from '$lib/config'
 
 export const actions: Actions = {
-	sendMessage: async ({ request }) => {
+	sendMessage: async ({ request, fetch }) => {
 		const formData = await request.formData()
 
 		const firstName = formData.get('firstName')
@@ -10,10 +11,30 @@ export const actions: Actions = {
 		const subject = formData.get('subject')
 		const message = formData.get('message')
 
-		console.log(firstName + ' ' + lastName + ' ' + email + ' ' + subject + ' ' + message) 
+		const contactEndpoint = `${backend}/contact/`
 
-		return {
-			update: { status: 'success', message: 'Message sent successfully!' }
+		const res = await fetch(contactEndpoint, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				first_name: firstName,
+				last_name: lastName,
+				email: email,
+				subject: subject,
+				message: message
+			})
+		})
+			.then((res) => res.json())
+			.catch((error) => {
+				console.error('Error:', error)
+			})
+
+		if (res !== null) {
+			return {
+				update: { status: res.data.status, message: res.data.message }
+			}
 		}
 	}
 }
