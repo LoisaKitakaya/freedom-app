@@ -5,7 +5,7 @@
 	import type { SubmitFunction } from '@sveltejs/kit'
 	import { enhance } from '$app/forms'
 
-	import { Menu, Scroll, Gem, Github } from 'lucide-svelte'
+	import { Menu, Scroll, Gem } from 'lucide-svelte'
 
 	import Header from '$lib/components/layout/Header.svelte'
 	import Footer from '$lib/components/layout/Footer.svelte'
@@ -16,24 +16,24 @@
 
 	let isNavLinksVisible = false
 
+	let modal: HTMLElement | null
+
+	if (typeof window !== 'undefined') {
+		modal = document.getElementById('resume')
+	}
+
+	const openModal = () => {
+		//@ts-ignore
+		modal.showModal()
+	}
+
+	const closeModal = () => {
+		//@ts-ignore
+		modal.close()
+	}
+
 	onMount(() => {
 		isNavLinksVisible = false
-
-		let modal: HTMLElement | null
-
-		if (typeof window !== 'undefined') {
-			modal = document.getElementById('resume')
-		}
-
-		const openModal = () => {
-			//@ts-ignore
-			modal.showModal()
-		}
-
-		const closeModal = () => {
-			//@ts-ignore
-			modal.close()
-		}
 
 		//@ts-ignore
 		document.getElementById('resume-modal').addEventListener('click', openModal)
@@ -54,7 +54,7 @@
 				switch (res.status) {
 					case 'success':
 						toast.success(res.message)
-						console.log(res)
+						closeModal()
 						break
 					case 'error':
 						toast.success(res.message)

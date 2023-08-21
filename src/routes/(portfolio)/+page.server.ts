@@ -1,4 +1,5 @@
 import type { Actions } from '@sveltejs/kit'
+import { backend } from '$lib/config'
 
 export const actions: Actions = {
 	setTheme: async ({ url, cookies }) => {
@@ -11,15 +12,29 @@ export const actions: Actions = {
 			})
 		}
 	},
-	requestResume: async ({ request }) => {
+	requestResume: async ({ request, fetch }) => {
 		const formData = await request.formData()
 
 		const email = formData.get('email')
 
-		console.log(email)
+		const resumeEndpoint = `${backend}/resume/`
 
-		return {
-			update: { status: 'success', message: `Resume has been sent to ${email}` }
+		const res = await fetch(resumeEndpoint, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({ email })
+		})
+			.then((res) => res.json())
+			.catch((error) => {
+				console.error('Error:', error)
+			})
+
+		if (res !== null) {
+			return {
+				update: { status: res.data.status, message: res.data.message }
+			}
 		}
 	}
 }
