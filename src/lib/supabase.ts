@@ -11,12 +11,10 @@ export const createNewUser = async (email: string, password: string) => {
 		})
 
 		if (error) {
-			console.error('Error fetching data:', error.message)
-		} else {
-			console.log('Fetched data:', data)
-
-			return data
+			throw new Error(error.message)
 		}
+
+		return data
 	} catch (e) {
 		console.error('An unexpected error occurred:', e)
 	}
@@ -30,12 +28,10 @@ export const signInUser = async (email: string, password: string) => {
 		})
 
 		if (error) {
-			console.error('Error fetching data:', error.message)
-		} else {
-			console.log('Fetched data:', data)
-
-			return data
+			throw new Error(error.message)
 		}
+
+		return data
 	} catch (e) {
 		console.error('An unexpected error occurred:', e)
 	}
@@ -44,11 +40,38 @@ export const signInUser = async (email: string, password: string) => {
 export const signOutUser = async () => {
 	try {
 		const { error } = await supabase.auth.signOut()
+
 		if (error) {
-			console.error('Error fetching data:', error.message)
-		} else {
-			return
+			throw new Error(error.message)
 		}
+
+		return
+	} catch (e) {
+		console.error('An unexpected error occurred:', e)
+	}
+}
+
+export const createNewCustomer = async (
+	first_name: string,
+	last_name: string,
+	email: string,
+	phone: string,
+	user: unknown
+) => {
+	try {
+		const { data, error } = await supabase.from('customers').insert({
+			first_name,
+			last_name,
+			email,
+			phone,
+			user
+		})
+
+		if (error) {
+			throw new Error(error.message)
+		}
+
+		return data
 	} catch (e) {
 		console.error('An unexpected error occurred:', e)
 	}

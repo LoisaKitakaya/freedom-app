@@ -1,4 +1,4 @@
-<form action="" method="POST" class="p-4">
+<form action="?/signUp" method="POST" class="p-4">
 	<div class="mb-3 form-component">
 		<label for="" style="margin-left: 1.175rem; margin-bottom: 0.25rem">First Name</label>
 		<input
