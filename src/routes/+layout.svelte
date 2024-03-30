@@ -6,12 +6,12 @@
 
 <NavDrawer />
 
-<main class="absolute right-0 p-4" id="main-body">
+<main class="absolute right-0" id="main-body">
 	<slot />
 </main>
 
 <style>
 	#main-body {
-		width: 80%;
+		width: 80.675%;
 	}
 </style>
