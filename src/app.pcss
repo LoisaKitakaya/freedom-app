@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Base styles for the scrollbar track and thumb */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #a0a0a0; /* Dark gray thumb */
+}
+
+/* Hover styles for a subtle animation */
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #808080; /* Darken on hover */
+}
