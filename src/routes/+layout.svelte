@@ -10,15 +10,15 @@
 
 		navLinks.forEach(() => {
 			if ($page.url.pathname === '/') {
-				navLinks[0]?.classList.add('text-rose-500');
+				navLinks[0]?.classList.add('text-orange-500');
 			} else if ($page.url.pathname === '/services') {
-				navLinks[1]?.classList.add('text-rose-500');
+				navLinks[1]?.classList.add('text-orange-500');
 			} else if ($page.url.pathname === '/skills') {
-				navLinks[2]?.classList.add('text-rose-500');
+				navLinks[2]?.classList.add('text-orange-500');
 			} else if ($page.url.pathname === '/work') {
-				navLinks[3]?.classList.add('text-rose-500');
+				navLinks[3]?.classList.add('text-orange-500');
 			} else if ($page.url.pathname === '/contact') {
-				navLinks[4]?.classList.add('text-rose-500');
+				navLinks[4]?.classList.add('text-orange-500');
 			}
 		});
 	});
