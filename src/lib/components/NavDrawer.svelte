@@ -5,7 +5,7 @@
 		const navLinks = document.querySelectorAll('.nav-link');
 
 		navLinks.forEach((link) => {
-			link.classList.remove('text-rose-500');
+			link.classList.remove('text-orange-500');
 		});
 	};
 
@@ -14,12 +14,12 @@
 
 		const anchor = document.querySelectorAll('.nav-link');
 
-		anchor[index]?.classList.add('text-rose-500');
+		anchor[index]?.classList.add('text-orange-500');
 	};
 </script>
 
 <div
-	class="fixed flex h-screen w-64 flex-col gap-12 bg-gray-200 px-4 py-2 dark:bg-gray-600 dark:text-white"
+	class="fixed flex h-screen w-64 flex-col gap-12 bg-gray-200 px-4 py-2 text-gray-900 dark:bg-gray-600 dark:text-white"
 >
 	<div class="flex flex-row items-center justify-between">
 		<span class="font-semibold">Menu</span>
@@ -43,35 +43,35 @@
 		<ul class="ml-20 w-fit text-lg">
 			<li>
 				<a
-					class="nav-link hover:text-rose-500 hover:underline"
+					class="nav-link hover:text-orange-500 hover:underline"
 					href="/"
 					on:click={() => changeColor(0)}>Home</a
 				>
 			</li>
 			<li>
 				<a
-					class="nav-link hover:text-rose-500 hover:underline"
+					class="nav-link hover:text-orange-500 hover:underline"
 					href="/services"
 					on:click={() => changeColor(1)}>Services</a
 				>
 			</li>
 			<li>
 				<a
-					class="nav-link hover:text-rose-500 hover:underline"
+					class="nav-link hover:text-orange-500 hover:underline"
 					href="/skills"
 					on:click={() => changeColor(2)}>Skills</a
 				>
 			</li>
 			<li>
 				<a
-					class="nav-link hover:text-rose-500 hover:underline"
+					class="nav-link hover:text-orange-500 hover:underline"
 					href="/work"
 					on:click={() => changeColor(3)}>Work</a
 				>
 			</li>
 			<li>
 				<a
-					class="nav-link hover:text-rose-500 hover:underline"
+					class="nav-link hover:text-orange-500 hover:underline"
 					href="/contact"
 					on:click={() => changeColor(4)}>Contact</a
 				>
