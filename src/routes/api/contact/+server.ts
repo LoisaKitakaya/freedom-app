@@ -14,14 +14,14 @@ const sendEmail = async ({ from, subject, text }) => {
 			}
 		});
 
-		const info = await transporter.sendMail({
+		await transporter.sendMail({
 			from: gmail_address,
 			to: gmail_address,
 			subject: subject,
 			text: from + ': ' + text
 		});
 
-		console.log('Message sent: %s', info.messageId);
+		// console.log('Message sent: %s', info.messageId);
 
 		return true;
 	} catch (error) {
