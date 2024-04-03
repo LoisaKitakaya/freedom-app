@@ -13,11 +13,11 @@
 </svelte:head>
 
 <section class="min-h-screen w-full p-4 text-gray-900 dark:text-white">
-	<Tabs style="underline" contentClass="!bg-white dark:!bg-gray-700 p-4 mt-20">
+	<Tabs style="underline" contentClass="!bg-white dark:!bg-gray-700 md:p-4 p-0 md:mt-20 mt-8">
 		<TabItem open title="Websites & Web-apps">
 			<div class="grid grid-cols-1 gap-16">
 				{#each webDevWork as work}
-					<div class="mx-auto flex w-4/5 flex-row gap-8">
+					<div class="mx-auto flex w-4/5 flex-row flex-wrap gap-8 md:flex-nowrap">
 						<Card class="!p-0">
 							<Carousel images={work.images} duration={3900} let:Indicators class="mx-auto">
 								<Indicators />
@@ -44,7 +44,7 @@
 		<TabItem title="Design Work">
 			<div class="grid grid-cols-1 gap-16">
 				{#each designWork as work}
-					<div class="mx-auto flex w-4/5 flex-row gap-8">
+					<div class="mx-auto flex w-4/5 flex-row flex-wrap gap-8 md:flex-nowrap">
 						<Card class="!p-0">
 							<Carousel images={work.images} duration={3900} let:Indicators class="mx-auto">
 								<Indicators />
