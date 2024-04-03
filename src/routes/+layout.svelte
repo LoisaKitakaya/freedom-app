@@ -2,6 +2,8 @@
 	import '../app.pcss';
 
 	import NavDrawer from '$lib/components/NavDrawer.svelte';
+	import NavBar from '$lib/components/NavBar.svelte';
+
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 
@@ -24,14 +26,24 @@
 	});
 </script>
 
-<NavDrawer />
+<div class="relative z-0 flex h-full w-full overflow-hidden">
+	<NavDrawer />
 
-<main class="absolute right-0" id="main-body">
-	<slot />
-</main>
+	<div class="relative flex h-full max-w-full flex-1 flex-col overflow-hidden">
+		<NavBar />
+
+		<main>
+			<slot />
+		</main>
+	</div>
+</div>
 
 <style>
-	#main-body {
-		width: 80.675%;
+	/* Extra small devices (phones, 600px and down) */
+	@media only screen and (max-width: 600px) {
+	}
+
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+	@media only screen and (min-width: 600px) {
 	}
 </style>
