@@ -1,11 +1,15 @@
-<script>
+<script lang="ts">
 	import '../app.pcss';
 
 	import NavDrawer from '$lib/components/NavDrawer.svelte';
 	import NavBar from '$lib/components/NavBar.svelte';
+	import Transition from '$lib/components/Transition.svelte';
 
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
+	import type { PageData } from './$types';
+
+	export let data: PageData;
 
 	onMount(() => {
 		const navLinks = document.querySelectorAll('.nav-link');
@@ -33,7 +37,9 @@
 		<NavBar />
 
 		<main>
-			<slot />
+			<Transition url={data.url}>
+				<slot />
+			</Transition>
 		</main>
 	</div>
 </div>
