@@ -96,7 +96,7 @@
 
 				<div class="mb-4">
 					<Label class="mb-2 block">Your message</Label>
-					<Textarea {...textareaProps} bind:value={comment_} />
+					<Textarea class="bg-white dark:bg-gray-600" {...textareaProps} bind:value={comment_} />
 				</div>
 
 				<div class="w-full">
