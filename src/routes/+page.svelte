@@ -23,7 +23,7 @@
 </svelte:head>
 
 <section class="min-h-screen w-full p-4 text-gray-900 dark:text-white" id="banner">
-	<div class="m-auto flex h-fit w-fit flex-col items-center gap-8 pt-64">
+	<div class="m-auto flex h-fit w-fit flex-col items-center gap-8 pt-64 text-center">
 		<h1 class="text-3xl font-semibold">
 			I am a <strong>fullstack developer</strong> & <strong>graphic designer</strong>
 		</h1>
