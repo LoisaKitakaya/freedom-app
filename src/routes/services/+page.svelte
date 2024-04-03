@@ -23,7 +23,7 @@
 </svelte:head>
 
 <section class="min-h-screen w-full p-4 text-gray-900 dark:text-white">
-	<div class="mt-20 flex h-fit flex-row justify-evenly">
+	<div class="md:mt-20 mt-0 flex h-fit flex-row justify-evenly flex-wrap md:gap-0 gap-8">
 		<Card class="w-96 bg-gray-50">
 			<div class="flex flex-col items-center gap-2">
 				<div class="flex justify-center">
