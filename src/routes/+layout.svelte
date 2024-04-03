@@ -4,6 +4,7 @@
 	import NavDrawer from '$lib/components/NavDrawer.svelte';
 	import NavBar from '$lib/components/NavBar.svelte';
 	import Transition from '$lib/components/Transition.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
@@ -41,6 +42,8 @@
 				<slot />
 			</Transition>
 		</main>
+
+		<Footer />
 	</div>
 </div>
 
