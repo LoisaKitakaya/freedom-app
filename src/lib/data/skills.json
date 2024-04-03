@@ -7,21 +7,21 @@
     ],
     "tools_and_technologies": [
         {"name": "Python", "score": 88.93},
-        {"name": "JavaScript [React]", "score":88.17},
+        {"name": "React", "score":88.17},
         {"name": "HTML/CSS", "score": 92.56},
-        {"name": "Python [Flask]", "score":91.35},
+        {"name": "Flask", "score":91.35},
         {"name": "JavaScript", "score":89.56},
-        {"name": "JavaScript [Sveltekit]", "score":77.36},
+        {"name": "Sveltekit", "score":77.36},
         {"name": "UI/UX", "score":88.16},
-        {"name": "Graphic Design [Figma]", "score":91.25},
-        {"name": "Python [Django]", "score":89.16},
-        {"name": "Databases [MongoDB]", "score":92.44},
-        {"name": "Version Control [Git]", "score":94.67},
+        {"name": "Figma", "score":91.25},
+        {"name": "Django", "score":89.16},
+        {"name": "MongoDB", "score":92.44},
+        {"name": "Git & GitHub", "score":94.67},
         {"name": "Graphic Design", "score":83.53},
         {"name": "Databases", "score":90.34},
-        {"name": "Graphic Design [Krita]", "score":87.10},
+        {"name": "Krita", "score":87.10},
         {"name": "Docker", "score":79.35},
-        {"name": "Databases [PostgreSQL]", "score":86.35}
+        {"name": "PostgreSQL", "score":86.35}
         
     ]
 }

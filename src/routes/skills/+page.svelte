@@ -12,7 +12,7 @@
 </svelte:head>
 
 <section class="min-h-screen w-full p-4 text-gray-900 dark:text-white">
-	<div class="mt-20 h-fit">
+	<div class="md:mt-20 mt-0 h-fit">
 		<div class="mb-10 text-center">
 			<h1 class="text-3xl font-semibold">My Skill-Set</h1>
 			<span class="text-lg italic"
@@ -22,7 +22,7 @@
 
 		<div class="mb-4">
 			<h1 class="mb-2 text-lg font-semibold">General Skills</h1>
-			<div class="grid grid-cols-4 gap-4">
+			<div class="grid md:grid-cols-4 grid-cols-2 gap-4">
 				{#each generalSkills as skill}
 					<div>
 						<div class="mx-2 mb-1 text-base font-semibold dark:text-white">{skill.name}</div>
@@ -45,7 +45,7 @@
 
 		<div class="mb-4">
 			<h1 class="mb-2 text-lg font-semibold">Tools & Technologies</h1>
-			<div class="grid grid-cols-4 gap-4">
+			<div class="grid md:grid-cols-4 grid-cols-2 gap-4">
 				{#each toolsAndTechnologies as stack}
 					<div>
 						<div class="mx-2 mb-1 text-base font-semibold dark:text-white">{stack.name}</div>
