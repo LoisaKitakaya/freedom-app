@@ -61,8 +61,10 @@
 </svelte:head>
 
 <section class="min-h-screen w-full p-4 text-gray-900 dark:text-white">
-	<div class="mx-auto mt-20 w-fit">
-		<Card class="w-96 bg-gray-50">
+	<div class="mx-auto mb:mt-12 mt-8 w-fit">
+		<h1 class="mb-8 text-center text-xl font-semibold">Let's Connect!</h1>
+
+		<Card class="w-80 bg-gray-50 md:w-96">
 			<form>
 				<div class="mb-4">
 					<Label class="mb-2 block">Your email</Label>
