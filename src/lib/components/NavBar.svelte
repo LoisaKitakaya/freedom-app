@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, DarkMode } from 'flowbite-svelte';
 </script>
 
 <div class="sticky top-0 z-10 flex min-h-[40px] items-center justify-center border-b md:hidden">
@@ -9,7 +9,12 @@
 				>Loisa Kitakaya</span
 			>
 		</NavBrand>
-		<NavHamburger />
+
+		<div>
+			<DarkMode />
+			<NavHamburger />
+		</div>
+		
 		<NavUl>
 			<NavLi href="/">Home</NavLi>
 			<NavLi href="/services">Services</NavLi>
