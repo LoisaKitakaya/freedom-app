@@ -24,7 +24,7 @@
 	<title>Work</title>
 </svelte:head>
 
-<section class="min-h-screen w-full p-4 text-gray-900 dark:text-white">
+<section class="upper-container min-h-screen w-full p-4 text-gray-900 dark:text-white">
 	<Tabs style="underline" contentClass="!bg-white dark:!bg-gray-700 md:p-4 p-0 md:mt-20 mt-8">
 		<TabItem open title="Websites & Web-apps">
 			{#if webDevWork.length !== 0 || webDevWork.length > 1}
@@ -100,6 +100,10 @@
 		height: 100% !important;
 	}
 
+	.upper-container {
+		height: 100% !important;
+	}
+
 	/* Extra small devices (phones, 600px and down) */
 	@media only screen and (max-width: 600px) {
 		.job-container {
@@ -113,6 +117,33 @@
 	@media only screen and (min-width: 600px) {
 		.job-container {
 			height: 980px !important;
+			overflow: hidden;
+			overflow-y: scroll;
+		}
+	}
+
+	/* Medium devices (landscape tablets, 768px and up) */
+	@media only screen and (min-width: 768px) {
+		.upper-container {
+			height: 100vh !important;
+			overflow: hidden;
+			overflow-y: scroll;
+		}
+	}
+
+	/* Large devices (laptops/desktops, 992px and up) */
+	@media only screen and (min-width: 992px) {
+		.upper-container {
+			height: 100vh !important;
+			overflow: hidden;
+			overflow-y: scroll;
+		}
+	}
+
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+	@media only screen and (min-width: 1200px) {
+		.upper-container {
+			height: 100vh !important;
 			overflow: hidden;
 			overflow-y: scroll;
 		}
