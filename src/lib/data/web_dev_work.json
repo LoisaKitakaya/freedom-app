@@ -1,21 +1,78 @@
 {
 	"projects": [
 		{
-			"name": "Project 1",
-			"description": "this project utilizes the following technologies: pytho, js, some other one and uet another one",
-			"link": "/",
+			"name": "Rislo Dairy Farm",
+			"description": "This platform is CRUD fullstack web application. The frontend is built using Sveltekit + DaisyUI. The backend is built using Flask + MongoDB.",
+			"link": "https://rislofarm.vercel.app/",
 			"images": [
 				{
-					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1711679894/sample.jpg",
-					"alt": "12"
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712628891/Portfolio/Screenshot_from_2024-04-09_05-07-03_caj6wf.png",
+					"alt": "1"
 				},
 				{
-					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1677404501/kxf8grbzcesi5ni10pxg.png",
-					"alt": "13"
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712628888/Portfolio/Screenshot_from_2024-04-09_05-07-32_lqceju.png",
+					"alt": "2"
 				},
 				{
-					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1677404182/vkfzbjpglzv8zvdqhxhg.png",
-					"alt": "14"
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712628887/Portfolio/Screenshot_from_2024-04-09_05-07-25_ubyw4y.png",
+					"alt": "3"
+				}
+			]
+		},
+		{
+			"name": "MacRayan's portfolio website",
+			"description": "This website is built using React + Three.js.",
+			"link": "https://macryan-mwenda-portfolio.netlify.app/",
+			"images": [
+				{
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712629796/Portfolio/Screenshot_from_2024-04-09_05-28-37_jrnhzy.png",
+					"alt": "1"
+				},
+				{
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712629796/Portfolio/Screenshot_from_2024-04-09_05-29-25_r9l4zu.png",
+					"alt": "2"
+				},
+				{
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712629795/Portfolio/Screenshot_from_2024-04-09_05-28-55_mallix.png",
+					"alt": "3"
+				}
+			]
+		},
+		{
+			"name": "Clean-Hub Connect",
+			"description": "This platform is a fullstack web application. The frontend is built using Sveltekit + DaisyUI. The Backend is built using Django + PostgreSQL.",
+			"link": "https://chc.vercel.app/",
+			"images": [
+				{
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712629796/Portfolio/Screenshot_from_2024-04-09_05-28-37_jrnhzy.png",
+					"alt": "1"
+				},
+				{
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712629796/Portfolio/Screenshot_from_2024-04-09_05-29-25_r9l4zu.png",
+					"alt": "2"
+				},
+				{
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712629795/Portfolio/Screenshot_from_2024-04-09_05-28-55_mallix.png",
+					"alt": "3"
+				}
+			]
+		},
+		{
+			"name": "The Radical Christian Blog",
+			"description": "This website is built using SvelteKit + OpenProps",
+			"link": "https://theradicalchristian.vercel.app/",
+			"images": [
+				{
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712631598/Portfolio/Screenshot_from_2024-04-09_05-58-45_l5bowt.png",
+					"alt": "1"
+				},
+				{
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712631598/Portfolio/Screenshot_from_2024-04-09_05-59-09_tlfijx.png",
+					"alt": "2"
+				},
+				{
+					"src": "https://res.cloudinary.com/dit0fii18/image/upload/v1712631598/Portfolio/Screenshot_from_2024-04-09_05-59-35_yfhz4z.png",
+					"alt": "3"
 				}
 			]
 		}

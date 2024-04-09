@@ -28,7 +28,7 @@
 	<Tabs style="underline" contentClass="!bg-white dark:!bg-gray-700 md:p-4 p-0 md:mt-20 mt-8">
 		<TabItem open title="Websites & Web-apps">
 			{#if webDevWork.length !== 0 || webDevWork.length > 1}
-				<div class="grid grid-cols-1 gap-16">
+				<div class="job-container grid grid-cols-1 gap-16">
 					{#each webDevWork as work}
 						<div class="mx-auto flex w-4/5 flex-row flex-wrap gap-8 md:flex-nowrap">
 							<Card class="!p-0">
@@ -61,7 +61,7 @@
 		</TabItem>
 		<TabItem title="Design Work">
 			{#if designWork.length !== 0 || designWork.length > 1}
-				<div class="grid grid-cols-1 gap-16">
+				<div class="job-container grid grid-cols-1 gap-16">
 					{#each designWork as work}
 						<div class="mx-auto flex w-4/5 flex-row flex-wrap gap-8 md:flex-nowrap">
 							<Card class="!p-0">
@@ -94,3 +94,29 @@
 		</TabItem>
 	</Tabs>
 </section>
+
+<style>
+	.job-container {
+		height: 350px !important;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+
+	/* Extra small devices (phones, 600px and down) */
+	@media only screen and (max-width: 600px) {
+		.job-container {
+			height: auto !important;
+			overflow: visible;
+			overflow-y: hidden;
+		}
+	}
+
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+	@media only screen and (min-width: 600px) {
+		.job-container {
+			height: 980px !important;
+			overflow: hidden;
+			overflow-y: scroll;
+		}
+	}
+</style>
